@@ -12,7 +12,7 @@ class Demo_PlugineController(CementBaseController):
         label = 'monit'
         description = "Demo Plugin for ee"
         stacked_on = 'base'
-        stacked_type = 'stacked'
+        stacked_type = 'nested'
         # arguments = [
         #     (['--monit'], dict(help="option under base controller")),
         #     ]
@@ -33,4 +33,4 @@ class Demo_PlugineController(CementBaseController):
 
 
 def load(ee):
-    handler.register(DemoPlugin4eeController)
+    handler.register(Demo_PlugineController)
